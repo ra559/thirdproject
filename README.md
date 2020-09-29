@@ -1,4 +1,5 @@
 # Thirdproject
+![Logo](./assets/logo.png)
 [CHANGELOG.md](CHANGELOG.md)
 
 # Project Description

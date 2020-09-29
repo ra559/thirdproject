@@ -1,1 +1,4 @@
-# thirdproject
+# Thirdproject
+# Contributors
+
+# License and Copyright

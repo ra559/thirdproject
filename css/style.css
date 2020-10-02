@@ -1,0 +1,85 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+    color: #FFF;
+}
+#home {
+    background: url(../assets/wallpaper1.png) no-repeat 50% 50%;
+    display: table;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+
+}
+.landing-text {
+    display: table-cell;
+    vertical-align: middle;
+
+}
+h1 {
+    font-family: 'Satisfy', sans-serif;
+    font-size: 900%;
+    line-height: .9;
+    text-shadow: 2px 2px #000000;
+}
+h3 {
+    font-size: 260%;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.btn-default {
+    transition: all 0.5s ease;
+    background-color: dimgray;
+    color: whitesmoke;
+    font-size: 160%;
+
+}
+.btn-default:hover {
+    color: 	#21333b;
+    box-shadow: inset 0 0 0 25px #4ad270;
+}
+p {
+    color: #36342F;
+    padding: 3%;
+}
+.logos{
+    text-shadow: 2px 2px #ff0000;
+
+
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 350%;
+    }
+    h3 {
+        font-size: 150%;
+    }
+    .btn-default {
+        font-size: 120%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

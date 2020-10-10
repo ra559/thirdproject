@@ -30,6 +30,11 @@ figure figcaption{
     font-size: 2em;
 
 }
-#gif{
+.gif{
     margin: auto;
+}
+.thead{
+  background-color: #36342F;
+    color: whitesmoke;
+    text-align: center;
 }

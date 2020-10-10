@@ -12,20 +12,29 @@
 <body>
 
 <div id="home">
-    <!-- logo -->
-    <img src="./assets/logo_200x200.png" width="50" height="50"  alt="">
-    <!-- logos linked and github -->
-    <div id="logos">
-        <img src="./assets/logo_github.png" width="50" height="50" alt=""><br>
-        <img src="./assets/logo_linkedin.png" width="50" height="50" alt="">
-    </div>
-
     <div class="landing-text" >
         <h1>How the Internet Works</h1>
         <br>
-        <a href="#" class="btn btn-default btn-lg">Get Started</a>
+        <a onclick="myFunction()" href="#" class="btn btn-default btn-lg">Get Started</a>
     </div>
-</div>
+    <ul class="home-menu" id="menu" style="display: none;">
+        <li><a href="./html/dns.html">Domain Names, DNS, and ICANN</a></li>
+        <li><a href="./html/web.html">Web Protocols and Other Technologies</a></li>
+        <li><a href="./html/ip.html">IP Addresses, Packets, and Routing</a></li>
+        <li><a href="./html/about.html">About Me</a></li>
+        <li><a href="https://github.com/ra559/thirdproject">Github</a></li>
+    </ul>
 
+</div>
+<script>
+    function myFunction() {
+        var x = document.getElementById("menu");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
 </body>
 </html>

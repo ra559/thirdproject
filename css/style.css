@@ -1,5 +1,6 @@
 ﻿@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@600&display=swap');
 
 html, body {
     height: 100%;
@@ -64,7 +65,28 @@ p {
     }
 }
 
+.home-menu{
+    font-size: 3em;
+    font-family: 'Raleway-ligh', sans-serif;
+    line-height: 2em;
+    margin-top: 15%;
+    list-style: none;
+    text-decoration: none;
 
+}
+.home-menu li a{
+    color: #3e8f3e;
+    padding: 2%;
+    border-radius: 25px;
+    text-shadow: 2px 2px whitesmoke;
+}
+.home-menu li a:hover{
+    text-decoration: none;
+    background: rgb(25,56,33);
+    background: linear-gradient(301deg, rgba(25,56,33,1) 0%, rgba(107,107,107,1) 100%);
+    color: whitesmoke;
+    text-shadow: none;
+}
 
 
 

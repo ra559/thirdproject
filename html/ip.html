@@ -1,69 +1,132 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>How the Internet Works</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link href="./css/style.css" rel="stylesheet" />
-</head>
+<html lang=en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>DNS and ICANN</title>
 
-<body>
-<h1 id="ip-addresses-packets-and-routing">IP Addresses, Packets, and Routing</h1>
-<h2 id="ip-address">Ip Address</h2>
-<p>An IP address is a numeric identifier assigned to each machine on an IP network. It designates the specific location of a device on the network. IP addressing was designed to allow hosts on one network to communicate with a host on a different network regardless of the type of LANs the hosts are participating in. IP is the principal communications protocol in the Internet protocol suite (TCP/IP) for carrying packets (data) across networks. IP has the task of delivering packets from the source host to the destination host solely based on the IP addresses in the packet headers. The Internet Protocol was invented by Vint Cerf and Bob Kahn in 1974. The protocol was published in a paper titled “A Protocol for Packet Network Intercommunication” by the Institute of Electrical and Electronics Engineers (IEEE).</p>
-<p>There are two versions of the Internet Protocol; IPv4 and IPV6. An IPv4 address consists of 32 bits of information, which are divided into four sections (called octets) each octet holding 8 bits making 32 (8 × 4 = 32). An IP address can be written in 3 ways:</p>
-<ul>
-<li>Dotted-decimal, as in 172.16.30.56</li>
-<li>Binary, as in 10101100.00010000.00011110.00111000</li>
-<li>Hexadecimal, as in AC.10.1E.38</li>
-</ul>
-<p>IPv4 is known to be a structured, or hierarchical, address. The major advantage of this scheme is that it can handle a large number of addresses, (about 4.3 billion addresses). However, this structured scheme has an addressing disadvantage. If every address were unique, all routers on the Internet would need to store the address of each and every machine on the Internet. To solve this problem the solution is to use a two or three-level hierarchical addressing scheme organized by network and host or by network, subnet, and host. In this schema, Rather than all 32 bits being treated as a unique identifier, a part of the address is designated as the network address and the other part is designated as the host.</p>
-<p>The network address uniquely identifies each network. Every machine on the same network shares that network address as part of its IP address. The host address is assigned to each machine on a network. This part of the address must be unique because it identifies a particular machine. The designers of the Internet decided to create classes of networks based on network size.</p>
-<figure>
-<img src="https://rebrand.ly/tnvorbi" alt="ip address" /><figcaption>ip address</figcaption>
-</figure>
-<hr />
-<h3 id="class-a">Class A</h3>
-<p>In a Class A network address, the first byte is assigned to the network address, and the three remaining bytes are used for the host addresses. The Class A format is as follows: * Network.host.host.host.</p>
-<p>For example, in the IP address 49.22.102.70, the 49 is the network address and 22.102.70 is the host address.</p>
-<h3 id="class-b">Class B</h3>
-<p>In a Class B network address, the first 2 bytes are assigned to the network address and the remaining 2 bytes are used for host addresses. The format is as follows:</p>
-<ul>
-<li>Network.network.host.host</li>
-</ul>
-<p>For example, in the IP address 172.16.30.56, the network address is 172.16 and the host address is 30.56.</p>
-<h3 id="class-c">Class C</h3>
-<p>The first 3 bytes of a Class C network address is dedicated to the network portion of the address, with only 1 measly byte remaining for the host address. Here’s the format:</p>
-<ul>
-<li>network.network.network.host</li>
-</ul>
-<p>Using the example IP address 192.168.100.102, the network address is 192.168.100 and the host address is 102.</p>
-<figure>
-<img src="../assets/networkclasses.png" alt="network classes" /><figcaption>network classes</figcaption>
-</figure>
-<h3 id="private-vs-public-ip-addresses">Private vs Public IP Addresses</h3>
-<p>Because there is a limited number of IPv4 addresses, private ip addresses were invented. These addresses can be used on a private network, but they’re not routable through the Internet. This is designed for the purpose of creating a measure of much-needed security and to save valuable IP address space.</p>
-<p>If every host on every network had to have real routable IP addresses, we would have run out of available IP addresses to hand out years ago. But by using private IP addresses, ISPs, corporations, and home users need only a relatively tiny group of bona fide IP addresses to connect their networks to the Internet. This is economical because they can use private IP addresses on their inside networks and get along just fine. To accomplish this task, the ISP and the corporation need to use something called Network Address Translation (NAT), which basically takes a private IP address and converts it for use on the Internet.</p>
-<figure>
-<img src="https://rebrand.ly/ls8suic" alt="network map" /><figcaption>network map</figcaption>
-</figure>
-<hr />
-<h2 id="routing">Routing</h2>
-<p>Routing is the process of moving packets from one device in a given network to another device on another network using routers. Routers use routing protocols to determine where to route each packet. A routing protocol determines the path of a packet through an internetwork. Examples of routing protocols are Routing Information Protocol (RIP), Routing Information Protocol version 2 (RIPv2), Enhanced Interior Gateway Routing Protocol (EIGRP), and Open Shortest Path First (OSPF). To be capable of routing packets, a router must know at least the following information:</p>
-<ul>
-<li>Destination network address</li>
-<li>Neighbor routers from which it can learn about remote networks</li>
-<li>Possible routes to all remote networks</li>
-<li>The best route to each remote network</li>
-<li>How to maintain and verify routing information</li>
-</ul>
-<p>The router learns about remote networks from neighbor routers or from an administrator. The router then builds a routing table (a map of the internetwork) that describes how to find the remote networks. If a network is directly connected, then the router already knows how to get to it. If a network isn’t directly connected to the router, the router must use one of two ways to learn how to get to it. One way is called static routing, which can be a ton of work because it requires someone to hand-type all network locations into the routing table. The other way is dynamic routing. In dynamic routing, a protocol on one router communicates with the same protocol running on neighbor routers. The routers then update each other about all the networks they know about and place this information into the routing table. If a change occurs in the network, the dynamic routing protocols automatically inform all routers about the event. If static routing is used, the administrator is responsible for updating all changes by hand into all routers.</p>
-<h2 id="packet">Packet</h2>
-<p>In computing, a packet is a formatted unit of data carried by a packet-switched network. A packet consists of control information and the payload. The concept of packet switching and packages dates back to the 1960s. Packet switching divides data into small blocks - we call these blocks packages- and includes an identification of the intended recipient in each packet. Devices located throughout the network each have information about how to reach each possible destination. Basically, the internet is nothing but a web of packet-switching networks.</p>
-<figure>
-<img src="../assets/ip_packet.png" alt="packet anatomy" /><figcaption>packet anatomy</figcaption>
-</figure>
-</body>
+        <!-- Bootstrap -->
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <!-- my styles -->
+        <link rel="stylesheet" href="../css/styles2.css"/>
+        <link rel="stylesheet" href="../css/nav.css">
+        <link rel="stylesheet" href="../css/footer.css">
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="../js/bootstrap.min.js" rel="script"></script>
+    </head>
+    <div >
+        <!-- logo here -->
+        <div class="rounded mx-auto d-block text-center">
+            <img src="../assets/logo_200x200.png" alt="">
+        </div>
+        <!-- Nav Bar here -->
+        <nav id="navbar-primary" class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-primary-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-primary-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../html/about.html">About</a></li>
+                        <li><a href="./dns.html">Domain Names</a></li>
+                        <li><a href="./web.html">Web Protocols</a></li>
+                        <li><a href="./ip.html">IP Addresses</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end of nav bar -->
+        <hr>
+    </div>
+
+    <body class="container">
+        <h1 id="ip-addresses-packets-and-routing">IP Addresses, Packets, and Routing</h1>
+        <h2 id="ip-address">Ip Address</h2>
+        <p>An IP address is a numeric identifier assigned to each machine on an IP network. It designates the specific location of a device on the network. IP addressing was designed to allow hosts on one network to communicate with a host on a different network regardless of the type of LANs the hosts are participating in. IP is the principal communications protocol in the Internet protocol suite (TCP/IP) for carrying packets (data) across networks. IP has the task of delivering packets from the source host to the destination host solely based on the IP addresses in the packet headers. The Internet Protocol was invented by Vint Cerf and Bob Kahn in 1974. The protocol was published in a paper titled “A Protocol for Packet Network Intercommunication” by the Institute of Electrical and Electronics Engineers (IEEE).</p>
+        <p>There are two versions of the Internet Protocol; IPv4 and IPV6. </p>
+
+        <p>IPv4 is known to be a structured, or hierarchical, address. The major advantage of this scheme is that it can handle a large number of addresses, (about 4.3 billion addresses). However, this structured scheme has an addressing disadvantage. If every address were unique, all routers on the Internet would need to store the address of each and every machine on the Internet. To solve this problem the solution is to use a two or three-level hierarchical addressing scheme organized by network and host or by network, subnet, and host. In this schema, Rather than all 32 bits being treated as a unique identifier, a part of the address is designated as the network address and the other part is designated as the host.</p>
+        <p>The network address uniquely identifies each network. Every machine on the same network shares that network address as part of its IP address. The host address is assigned to each machine on a network. This part of the address must be unique because it identifies a particular machine. The designers of the Internet decided to create classes of networks based on network size.</p>
+        <div class="container text-center">
+            <img  class="img-responsive img-rounded gif" src="https://rebrand.ly/tnvorbi" alt="ip address" />
+        </div>
+        <hr />
+        <h3 id="class-a">Class A</h3>
+        <p>In a Class A network address, the first byte is assigned to the network address, and the three remaining bytes are used for the host addresses. The Class A format is as follows: * Network.host.host.host.</p>
+        <p>For example, in the IP address 49.22.102.70, the 49 is the network address and 22.102.70 is the host address.</p>
+        <h3 id="class-b">Class B</h3>
+        <p>In a Class B network address, the first 2 bytes are assigned to the network address and the remaining 2 bytes are used for host addresses. The format is as follows:</p>
+
+        <p>Network.network.host.host</p>
+
+        <p>For example, in the IP address 172.16.30.56, the network address is 172.16 and the host address is 30.56.</p>
+        <h3 id="class-c">Class C</h3>
+        <p>The first 3 bytes of a Class C network address is dedicated to the network portion of the address, with only 1 measly byte remaining for the host address. Here’s the format:</p>
+
+        <p>network.network.network.host</p>
+
+        <p>Using the example IP address 192.168.100.102, the network address is 192.168.100 and the host address is 102.</p>
+        <div class="container text-center">
+            <img class="img-responsive img-rounded gif" src="../assets/networkclasses.png" alt="network classes" />
+        </div>
+        <h3 id="private-vs-public-ip-addresses">Private vs Public IP Addresses</h3>
+        <p>Because there is a limited number of IPv4 addresses, private ip addresses were invented. These addresses can be used on a private network, but they’re not routable through the Internet. This is designed for the purpose of creating a measure of much-needed security and to save valuable IP address space.</p>
+        <p>If every host on every network had to have real routable IP addresses, we would have run out of available IP addresses to hand out years ago. But by using private IP addresses, ISPs, corporations, and home users need only a relatively tiny group of bona fide IP addresses to connect their networks to the Internet. This is economical because they can use private IP addresses on their inside networks and get along just fine. To accomplish this task, the ISP and the corporation need to use something called Network Address Translation (NAT), which basically takes a private IP address and converts it for use on the Internet.</p>
+        <div class="container text-center">
+            <img class="img-responsive img-rounded gif"  src="https://rebrand.ly/ls8suic" alt="network map" />
+        </div>
+        <hr />
+        <h2 id="routing">Routing</h2>
+        <p>Routing is the process of moving packets from one device in a given network to another device on another network using routers. Routers use routing protocols to determine where to route each packet. A routing protocol determines the path of a packet through an internetwork. Examples of routing protocols are Routing Information Protocol (RIP), Routing Information Protocol version 2 (RIPv2), Enhanced Interior Gateway Routing Protocol (EIGRP), and Open Shortest Path First (OSPF). To be capable of routing packets, a router must know at least the following information:</p>
+        <ul>
+        <li>Destination network address</li>
+        <li>Neighbor routers from which it can learn about remote networks</li>
+        <li>Possible routes to all remote networks</li>
+        <li>The best route to each remote network</li>
+        <li>How to maintain and verify routing information</li>
+        </ul>
+        <p>The router learns about remote networks from neighbor routers or from an administrator. The router then builds a routing table (a map of the internetwork) that describes how to find the remote networks. If a network is directly connected, then the router already knows how to get to it. If a network isn’t directly connected to the router, the router must use one of two ways to learn how to get to it. One way is called static routing, which can be a ton of work because it requires someone to hand-type all network locations into the routing table. The other way is dynamic routing. In dynamic routing, a protocol on one router communicates with the same protocol running on neighbor routers. The routers then update each other about all the networks they know about and place this information into the routing table. If a change occurs in the network, the dynamic routing protocols automatically inform all routers about the event. If static routing is used, the administrator is responsible for updating all changes by hand into all routers.</p>
+        <h2 id="packet">Packet</h2>
+        <p>In computing, a packet is a formatted unit of data carried by a packet-switched network. A packet consists of control information and the payload. The concept of packet switching and packages dates back to the 1960s. Packet switching divides data into small blocks - we call these blocks packages- and includes an identification of the intended recipient in each packet. Devices located throughout the network each have information about how to reach each possible destination. Basically, the internet is nothing but a web of packet-switching networks.</p>
+
+            <img class="img-responsive img-rounded text-center gif" src="../assets/ip_packet.png" alt="packet anatomy" />
+
+    </body>
+    <footer class="jumbotron">
+        <hr>
+        <div class="row">
+            <div class="col">
+                <h3 class="text-center">Quick Links</h3>
+                <ul class="nav navbar-nav item-custom">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../html/about.html">About</a></li>
+                    <li><a href="../html/dns.html">Domain Names</a></li>
+                    <li><a href="./web.html">Web Protocols</a></li>
+                    <li><a href="./ip.html">IP Addresses</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h3 class="text-center">About this project</h3>
+                <p>This projects provides a brief description of How the internet works. It explores topics such as DNS, IP address,
+                    Routing, HTTP, HTML and CSS. The sources for compiling this information are: Computer Networks and Internets by Douglas E. Commer
+                    COMPTia Network + Study Guide by Todd Lemmle, HTTP (HyperText Transfer Protocol) by https://www.ntu.edu.sg/ and The Worlds largest Encyclopedia Wikipedia.
+                    Much of the information here has been paraprased and rearranged from their original sources to cover the topics mentioned before and make it
+                    beginners friendly. Any questions reach out to: robertalberto350@gmail.com</p>
+            </div>
+        </div>
+
+        <hr>
+    </footer>
 </html>

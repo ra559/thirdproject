@@ -20,20 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57fb5fe5-8e79-40c1-bd7e-aebc8ca40de0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/css/footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/media.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/nav.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/styles2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/thirdproject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/thirdproject.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bootstrap Landing Files/Bootstrap Landing Complete/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bootstrap Landing Files/Bootstrap Landing Complete/sand-mountain.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bootstrap Landing Files/Bootstrap Landing Complete/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/styles2.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/dns.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/dns.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/ip.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/ip.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/web.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/web.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +78,7 @@
       <workItem from="1601482080844" duration="2756000" />
       <workItem from="1601608057574" duration="714000" />
       <workItem from="1602200621249" duration="613000" />
-      <workItem from="1602341857379" duration="15329000" />
+      <workItem from="1602341857379" duration="18867000" />
     </task>
     <servers />
   </component>

@@ -1,35 +1,163 @@
 <!DOCTYPE html>
-<html>
+<html lang=en">
 <head>
-    <title>How the Internet Works</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link href="./css/style.css" rel="stylesheet" />
-</head>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>DNS and ICANN</title>
 
-<body>
-<h1 id="web-protocols-and-other-technologies">Web Protocols and Other Technologies</h1>
-<h2 id="html-and-css">HTML and CSS</h2>
-<p>HyperText Markup Language (HTML) is a representation standard that specifies the syntax for a web page. Although HTML can be loosely defined as a way of writing documents, it allows developers to build complex pages that include graphics, tables, audio, and video. HTML only gives general guidelines for display text/multimedia and does not include detailed formatting instructions. This is the main reason why it is considered a markup language. The use of a markup language is important because it allows a browser to adapt the page to the underlying display hardware.<br />
-To specify the markup, HTML uses tags embedded in the document. Tags provide structure for the document as well as formatting hints. An HTML document starts with the tag &lt; HTML &gt;, and ends with the tag &lt;/ HTML &gt;. The pair of tags &lt; HEAD &gt; and &lt;/ HEAD &gt; bracket the head, while the pair of tags &lt; BODY &gt; and &lt;/ BODY &gt; bracket the body. In the head, the tags &lt; TITLE &gt; and &lt;/ TITLE &gt; bracket the text that forms the document title.</p>
-<figure>
-<img src="../assets/html.png" alt="html example" /><figcaption>html example</figcaption>
-</figure>
-<p>Although HTML can be used to provide some style to the website, Cascading Style Sheets are the to-go technology to add style and modify the appearance of websites. The name cascading comes from the specified priority scheme to determine which style rule applies if more than one rule matches a particular element. The CSS specifications are maintained by the World Wide Web Consortium (W3C). In addition to HTML, other markup languages support the use of CSS including XHTML, plain XML, SVG, and XUL.</p>
-<h2 id="w3c">W3C</h2>
-<p>The World Wide Web Consortium (W3C) is an international organization, lead by Tim Burners Lee, in charge of the standardization and organization for the World Wide Web. The W3C was founded in 1994 by Tim Burners Lee after he left the European Organization for Nuclear Research (CERN). The W3C is made up of member organizations that keep a full staff for developing standards. Alongside its main role, the W3C develops software and serves as an open forum for discussion on the future of the Web. The W3C is extremely important for the proper interoperation of technologies on the web since vendors come up with different technologies and without a regulatory and standardization agency, the web would be nothing but a menage of broken technology. An example is HTML which during the times of the Browser War saw many different changes implemented by different vendors (mainly Microsoft and Netscape).</p>
-<h2 id="http-and-https">HTTP and HTTPS</h2>
-<p>The HyperText Transfer Protocol (HTTP) is the primary transfer protocol that browsers use to interact with web servers. In essence, a browser is a client that extracts a server name from a URL and contacts the server. Most URLs contain an explicit protocol reference of http://, or omit the protocol altogether, in which case HTTP is assumed. Once it establishes a connection, a browser sends an HTTP request to the server. There are different types of requests. these are the major ones: GET, HEAD, POST, and PUT. GET Requests a document, HEAD Requests status information, POST sends data to a server and PUT also sends data to a server. The most common form of interaction begins when a browser requests a page from the server. The browser sends a GET request over the connection, and the server responds by sending a header, a blank line, and the requested document.</p>
-<figure>
-<img src="../assets/httprequest.png" alt="http request" /><figcaption>http request</figcaption>
-</figure>
-<p>The first line (Request Line) includes the type of request, the time being requested, and the version of HTTP being used. The version is important because in the case where the server is running a higher version of the HTTP protocol, the server knows to send the response matching the requested version. This makes HTTP backward compatible with earlier versions.</p>
-<figure>
-<img src="../assets/httpresponse.png" alt="http response" /><figcaption>http response</figcaption>
-</figure>
-<p>The first line of a response header contains a status code that tells the browser whether the server handled the request. There are different types of HTTP status codes depending on what the server responds. Some examples are: * 200: OK * 201: Created * 202: Accepted * 301: Moved Permanently * 303: See Other * 304: Not Modified * 307: Temporary Redirect * 400: Bad Request * 401: Unauthorized * 403: Forbidden * 404: Not Found * 409: conflict * 410: Gone * 500: Internal Server error * 503: Service Unavailable</p>
-<p>Hypertext Transfer Protocol Secure (HTTPS) is an extension of HTTP. In HTTPS, the communication protocol is encrypted using Transport Layer Security (TLS) or, formerly, Secure Sockets Layer (SSL). The protocol is therefore also referred to as HTTP over TLS, or HTTP over SSL. HTTPS has identical usage syntax to HTTP with the difference that HTTPS signals the browser to add an encryption layer over SSL/TLS.</p>
-</body>
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- my styles -->
+    <link rel="stylesheet" href="../css/styles2.css"/>
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js" rel="script"></script>
+</head>
+<div >
+    <!-- logo here -->
+    <div class="rounded mx-auto d-block text-center">
+        <img  src="../assets/logo_200x200.png" alt="">
+    </div>
+    <!-- Nav Bar here -->
+    <nav id="navbar-primary" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-primary-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-primary-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./dns.html">Domain Names</a></li>
+                    <li><a href="./web.html">Web Protocols</a></li>
+                    <li><a href="./ip.html">IP Addresses</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end of nav bar -->
+    <hr>
+</div>
+
+
+<body class="container">
+        <h1 id="web-protocols-and-other-technologies">Web Protocols and Other Technologies</h1>
+        <h2 id="html-and-css">HTML and CSS</h2>
+        <p>HyperText Markup Language (HTML) is a representation standard that specifies the syntax for a web page. Although HTML can be loosely defined as a way of writing documents, it allows developers to build complex pages that include graphics, tables, audio, and video. HTML only gives general guidelines for display text/multimedia and does not include detailed formatting instructions. This is the main reason why it is considered a markup language. The use of a markup language is important because it allows a browser to adapt the page to the underlying display hardware.<br />
+        To specify the markup, HTML uses tags embedded in the document. Tags provide structure for the document as well as formatting hints. An HTML document starts with the tag &lt; HTML &gt;, and ends with the tag &lt;/ HTML &gt;. The pair of tags &lt; HEAD &gt; and &lt;/ HEAD &gt; bracket the head, while the pair of tags &lt; BODY &gt; and &lt;/ BODY &gt; bracket the body. In the head, the tags &lt; TITLE &gt; and &lt;/ TITLE &gt; bracket the text that forms the document title.</p>
+        <div class="rounded mx-auto d-block text-center">
+            <img class="img-responsive img-rounded gif"  src="../assets/html.png" alt="html example" />
+        </div>
+        <p>Although HTML can be used to provide some style to the website, Cascading Style Sheets are the to-go technology to add style and modify the appearance of websites. The name cascading comes from the specified priority scheme to determine which style rule applies if more than one rule matches a particular element. The CSS specifications are maintained by the World Wide Web Consortium (W3C). In addition to HTML, other markup languages support the use of CSS including XHTML, plain XML, SVG, and XUL.</p>
+        <h2 id="w3c">W3C</h2>
+        <p>The World Wide Web Consortium (W3C) is an international organization, lead by Tim Burners Lee, in charge of the standardization and organization for the World Wide Web. The W3C was founded in 1994 by Tim Burners Lee after he left the European Organization for Nuclear Research (CERN). The W3C is made up of member organizations that keep a full staff for developing standards. Alongside its main role, the W3C develops software and serves as an open forum for discussion on the future of the Web. The W3C is extremely important for the proper interoperation of technologies on the web since vendors come up with different technologies and without a regulatory and standardization agency, the web would be nothing but a menage of broken technology. An example is HTML which during the times of the Browser War saw many different changes implemented by different vendors (mainly Microsoft and Netscape).</p>
+        <h2 id="http-and-https">HTTP and HTTPS</h2>
+        <p>The HyperText Transfer Protocol (HTTP) is the primary transfer protocol that browsers use to interact with web servers. In essence, a browser is a client that extracts a server name from a URL and contacts the server. Most URLs contain an explicit protocol reference of http://, or omit the protocol altogether, in which case HTTP is assumed. Once it establishes a connection, a browser sends an HTTP request to the server. There are different types of requests. these are the major ones: GET, HEAD, POST, and PUT. GET Requests a document, HEAD Requests status information, POST sends data to a server and PUT also sends data to a server. The most common form of interaction begins when a browser requests a page from the server. The browser sends a GET request over the connection, and the server responds by sending a header, a blank line, and the requested document.</p>
+        <div class="rounded mx-auto d-block text-center">
+            <img class="img-responsive img-rounded gif"  src="../assets/httprequest.png" alt="http request" />
+        </div>
+        <p>The first line (Request Line) includes the type of request, the time being requested, and the version of HTTP being used. The version is important because in the case where the server is running a higher version of the HTTP protocol, the server knows to send the response matching the requested version. This makes HTTP backward compatible with earlier versions.</p>
+        <div class="rounded mx-auto d-block text-center">
+            <img class="img-responsive img-rounded gif"  src="../assets/httpresponse.png" alt="http response" />
+        </div>
+        <p>The first line of a response header contains a status code that tells the browser whether the server handled
+            the request. There are different types of HTTP status codes depending on what the server responds.
+            Some examples are:</p>
+                <table class="table text-center">
+                    <thead class="thead">
+                    <tr>
+                        <td>STATUS CODE</td>
+                        <td>MEANING</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>200</td>
+                        <td>OK</td>
+                    </tr>
+                    <tr>
+                        <td>201</td>
+                        <td>Created</td>
+                    </tr>
+                    <tr>
+                        <td>301</td>
+                        <td>Moved Permanently</td>
+                    </tr>
+                    <tr>
+                        <td>303</td>
+                        <td>See Other</td>
+                    </tr>
+                    <tr>
+                        <td>304</td>
+                        <td>Not Modified</td>
+                    </tr>
+                    <tr>
+                        <td>307</td>
+                        <td>Temporary Redirect</td>
+                    </tr>
+                    <tr>
+                        <td>400</td>
+                        <td>Bad Request</td>
+                    </tr>
+                    <tr>
+                        <td>404</td>
+                        <td>Not Found</td>
+                    </tr>
+                    <tr>
+                        <td>409</td>
+                        <td>Conflict</td>
+                    </tr>
+                    <tr>
+                        <td>410</td>
+                        <td>Gone</td>
+                    </tr>
+                    <tr>
+                        <td>500</td>
+                        <td>Internal Server Error</td>
+                    </tr>
+                    <tr>
+                        <td>503</td>
+                        <td>Service Unavailable</td>
+                    </tr>
+                    </tbody>
+                </table>
+        <p>Hypertext Transfer Protocol Secure (HTTPS) is an extension of HTTP. In HTTPS, the communication protocol is encrypted using Transport Layer Security (TLS) or, formerly, Secure Sockets Layer (SSL). The protocol is therefore also referred to as HTTP over TLS, or HTTP over SSL. HTTPS has identical usage syntax to HTTP with the difference that HTTPS signals the browser to add an encryption layer over SSL/TLS.</p>
+        </body>
+    <footer class="jumbotron">
+        <hr>
+        <div class="row">
+            <div class="col">
+                <h3 class="text-center">Quick Links</h3>
+                <ul class="nav navbar-nav item-custom">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../html/about.html">About</a></li>
+                    <li><a href="../html/dns.html">Domain Names</a></li>
+                    <li><a href="./web.html">Web Protocols</a></li>
+                    <li><a href="./ip.html">IP Addresses</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h3 class="text-center">About this project</h3>
+                <p>This projects provides a brief description of How the internet works. It explores topics such as DNS, IP address,
+                    Routing, HTTP, HTML and CSS. The sources for compiling this information are: Computer Networks and Internets by Douglas E. Commer
+                    COMPTia Network + Study Guide by Todd Lemmle, HTTP (HyperText Transfer Protocol) by https://www.ntu.edu.sg/ and The Worlds largest Encyclopedia Wikipedia.
+                    Much of the information here has been paraprased and rearranged from their original sources to cover the topics mentioned before and make it
+                    beginners friendly. Any questions reach out to: robertalberto350@gmail.com</p>
+            </div>
+        </div>
+
+        <hr>
+    </footer>
 </html>

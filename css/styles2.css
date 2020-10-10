@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@600&display=swap');
+
+h1,h2,h3,h4{
+    font-family: 'Raleway', sans-serif;
+}
+h1{
+    font-size: 5em;
+    text-align: center;
+}
+h2{
+    font-size: 2.5em;
+}
+h3{
+    font-size: 2em;
+}
+p,span,table{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    line-height: 2em;
+    text-align: justify;
+
+}
+figure figcaption{
+    display: none;
+}
+.jumbotron{
+    margin-top: 2%;
+    background-color: #475d61;;
+    color:whitesmoke;
+    font-size: 2em;
+
+}
+#gif{
+    margin: auto;
+}

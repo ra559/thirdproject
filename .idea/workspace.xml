@@ -20,12 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57fb5fe5-8e79-40c1-bd7e-aebc8ca40de0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/css/footer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/media.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/nav.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/styles2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/thirdproject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/thirdproject.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bootstrap Landing Files/Bootstrap Landing Complete/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bootstrap Landing Files/Bootstrap Landing Complete/sand-mountain.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bootstrap Landing Files/Bootstrap Landing Complete/style.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/html/dns.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/dns.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/domain.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/html/ip.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/ip.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/protocol.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/w3c.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/web.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/web.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +56,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/html" />
       <recent name="$PROJECT_DIR$/css" />
     </key>
   </component>
@@ -75,7 +84,7 @@
       <workItem from="1601482080844" duration="2756000" />
       <workItem from="1601608057574" duration="714000" />
       <workItem from="1602200621249" duration="613000" />
-      <workItem from="1602341857379" duration="3097000" />
+      <workItem from="1602341857379" duration="15329000" />
     </task>
     <servers />
   </component>
@@ -95,17 +104,21 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2494" y="1304" width="360" height="645" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1602342675624">
+    <state x="2663" y="1392" width="426" height="492" key="FileChooserDialogImpl" timestamp="1602352430217">
+      <screen x="1920" y="1080" width="1920" height="1080" />
+    </state>
+    <state x="2663" y="1392" width="426" height="492" key="FileChooserDialogImpl/1920.1080.1920.1080/3840.0.1920.1080/0.1108.1920.1052/3840.1080.1920.1080@1920.1080.1920.1080" timestamp="1602352430217" />
+    <state x="2494" y="1304" width="360" height="645" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1602354839621">
       <screen x="1920" y="1080" width="1920" height="1080" />
     </state>
     <state x="574" y="1326" width="764" height="624" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.1108.1920.1052@0.1108.1920.1052" timestamp="1601406283469" />
     <state x="2494" y="224" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.28.1920.1052/1920.0.1920.1080@1920.0.1920.1080" timestamp="1601429525606" />
-    <state x="2494" y="1304" width="360" height="645" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1920.1080.1920.1080/3840.0.1920.1080/0.1108.1920.1052/3840.1080.1920.1080@1920.1080.1920.1080" timestamp="1602342675623" />
-    <state x="2543" y="1872" key="run.anything.popup" timestamp="1602342979094">
+    <state x="2494" y="1304" width="360" height="645" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1920.1080.1920.1080/3840.0.1920.1080/0.1108.1920.1052/3840.1080.1920.1080@1920.1080.1920.1080" timestamp="1602354839621" />
+    <state x="2543" y="1872" key="run.anything.popup" timestamp="1602353205017">
       <screen x="1920" y="1080" width="1920" height="1080" />
     </state>
     <state x="623" y="792" key="run.anything.popup/0.1108.1920.1052/0.0.1920.1080@0.1108.1920.1052" timestamp="1601411463663" />
-    <state x="2543" y="1872" key="run.anything.popup/1920.1080.1920.1080/3840.0.1920.1080/0.1108.1920.1052/3840.1080.1920.1080@1920.1080.1920.1080" timestamp="1602342979094" />
+    <state x="2543" y="1872" key="run.anything.popup/1920.1080.1920.1080/3840.0.1920.1080/0.1108.1920.1052/3840.1080.1920.1080@1920.1080.1920.1080" timestamp="1602353205017" />
     <state x="4463" y="792" key="run.anything.popup/1920.1080.1920.1080/3840.0.1920.1080/3840.1080.1920.1080/0.1108.1920.1052@3840.0.1920.1080" timestamp="1601482119831" />
     <state x="623" y="1340" width="672" height="678" key="search.everywhere.popup" timestamp="1601411370585">
       <screen x="0" y="1108" width="1920" height="1052" />

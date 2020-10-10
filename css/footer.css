@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@600&display=swap');
+
+.jumbotron{
+    color: whitesmoke;
+
+}
+.jumbotron h3{
+    font-size: 1em;
+    font-family: 'Raleway', sans-serif;
+}
+.jumbotron ul{
+    list-style: none;
+}
+.jumbotron a{
+    color: whitesmoke;
+    font-family: "Open Sans";
+    font-size: .75em;
+
+}
